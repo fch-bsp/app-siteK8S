@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: app-site
+  namespace: app-site
 spec:
   replicas: 2
   selector:
@@ -14,7 +15,7 @@ spec:
     spec:
       containers:
       - name: app-site
-        image: appconsult
+        image: nandocloud/app-site:latest
         ports:
           - containerPort: 80
         imagePullPolicy: Always

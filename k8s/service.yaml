@@ -4,6 +4,7 @@ metadata:
   name: app-site
   labels:
     run: app-site
+  namespace: app-site
 spec:
   type: NodePort
   ports:

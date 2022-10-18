@@ -6,9 +6,9 @@ resources:
 
 namespace: app-site
 images:
-- name: appconsult
+- name: app-site
   newName: nandocloud/app-site
-  newTag: b4830caf1780af909f81d81c3f23d194d3c7da90
+  newTag: 8ef393f655b17d078a4eef15e2744ccc0ee3e51e
 - name: react-application
-  newName: appconsult
+  newName: app-site
   newTag: latest
