@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: app-site
-        image: nandocloud/app-site:latest
+        image: app-site
         ports:
           - containerPort: 80
         imagePullPolicy: Always
