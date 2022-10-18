@@ -4,11 +4,10 @@ resources:
 - deployment.yaml
 - service.yaml
 
-namespace: app-consult
-
+namespace: app-site
 images:
 - name: appconsult
-  newName: nandocloud/app-consult
+  newName: nandocloud/app-site
   newTag: b4830caf1780af909f81d81c3f23d194d3c7da90
 - name: react-application
   newName: appconsult
