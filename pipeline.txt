@@ -1,0 +1,17 @@
+aws ecr create-repository --repository-name repo-site --region us-east-2
+
+
+aws ecs register-task-definition --region us-east-2 --cli-input-json file://httpd-td.json
+
+aws ecs create-cluster --region us-east-2 --cluster-name cluster-site
+
+aws ec2 create-security-group --group-name fargate-sg --description "Group for fargate tutorial"
+
+
+aws ec2 authorize-security-group-ingress --group-id sg-0b7488705520f2f78 --protocol tcp --port 7000 --cidr 0.0.0.0/0
+
+
+aws ecs create-service --region us-east-2 --service-name javalin-service 
+--task-definition sample-fargate --desired-count 1 --launch-type "FARGATE" 
+--network-configuration "awsvpcConfiguration={subnets=[subnet-fcc5779b,subnet-f7a318be],securityGroups=[sg-0b7488705520f2f78],assignPublicIp=ENABLED}" 
+--cluster fargate
