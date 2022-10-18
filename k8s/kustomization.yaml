@@ -8,7 +8,4 @@ namespace: app-site
 images:
 - name: app-site
   newName: nandocloud/app-site
-  newTag: dfe3017f6f05e562542acdbe6f9bd03bd8263387
-- name: app-site
-  newName: app-site
-  newTag: latest
+  newTag: 658c4bc69be0af47bf7492ebf3098095053b407f
