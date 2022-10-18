@@ -9,6 +9,6 @@ images:
 - name: app-site
   newName: nandocloud/app-site
   newTag: dfe3017f6f05e562542acdbe6f9bd03bd8263387
-- name: react-application
+- name: app-site
   newName: app-site
   newTag: latest
