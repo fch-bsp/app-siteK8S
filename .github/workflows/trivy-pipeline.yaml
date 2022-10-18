@@ -19,7 +19,7 @@ jobs:
         with:
           username: nandocloud
           password: ${{ secrets.DOCKER_PASSWORD }}
-          repository: nandocloud/app-siteK8S
+          repository: nandocloud/app-site
           tags: ${{ github.sha }}, latest
           
 #  O deploy só roda depois do Build
