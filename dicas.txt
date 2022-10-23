@@ -60,6 +60,7 @@ sudo kill -9 `sudo lsof -t -i:8080`
 sudo kill -9 $(lsof -t -i:8081)
 
 ----------------------------------
+----------------------------------
 comando criação cli 
 
 argocd app create app-site \
@@ -71,4 +72,6 @@ argocd app create app-site \
 --dest-server https://kubernetes.default.svc
 
 
-comando para deleta app 
+comando para deleta app-site
+
+# argocd app delete app-site
