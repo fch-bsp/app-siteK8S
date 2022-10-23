@@ -71,4 +71,6 @@ argocd app create app-site \
 --dest-server https://kubernetes.default.svc
 
 
-comando para deleta app 
+comando para deleta app-site
+
+# argocd app delete app-site
