@@ -75,3 +75,7 @@ argocd app create app-site \
 comando para deleta app-site
 
 # argocd app delete app-site
+
+
+
+ kubectl port-forward  service/app-site 8084:8080 -n app-site
