@@ -60,6 +60,7 @@ sudo kill -9 `sudo lsof -t -i:8080`
 sudo kill -9 $(lsof -t -i:8081)
 
 ----------------------------------
+----------------------------------
 comando criação cli 
 
 argocd app create app-site \
