@@ -4,7 +4,7 @@ metadata:
   name: app-site
   namespace: app-site
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       run: app-site
