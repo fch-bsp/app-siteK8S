@@ -2,4 +2,4 @@
 #COPY . /usr/local/apache2/htdocs/
 FROM ubuntu/apache2:latest
 COPY . /var/www/html
-EXPOSE 8080
+EXPOSE 80
